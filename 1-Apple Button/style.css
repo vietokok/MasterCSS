@@ -1,0 +1,36 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.apple-button {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 200px;
+	height: 100px;
+	background-color: #ddd;
+	border-radius: 50px;
+	border: 1px solid #999;
+	outline: none;
+	position: relative;
+	transition: 200ms;
+}
+.apple-button:checked {
+	background-color: mediumseagreen;
+	border: 1px solid mediumseagreen;
+}
+.apple-button:after {
+	content: "";
+	position: absolute;
+	width: 98px;
+	height: 98px;
+	background-color: #fff;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	transition: 200ms;
+}
+.apple-button:checked::after {
+	left: 100px;
+}
