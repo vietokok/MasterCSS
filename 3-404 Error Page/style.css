@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	overflow: hidden;
+	background-image: linear-gradient(
+		to right top,
+		#0a1422,
+		#05142c,
+		#021335,
+		#05113d,
+		#100d43
+	);
+	color: #fff;
+	font-family: "Merriweather", serif;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.title {
+	font-size: 120px;
+	margin-top: 50px;
+}
+
+.content {
+	font-size: 22px;
+}
+
+.button {
+	font-size: 16px;
+	padding: 8px 15px;
+	color: #fff;
+	background-color: rgb(124, 0, 0);
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.button:hover {
+	background-color: rgb(207, 32, 41);
+}
+
+.button:active {
+	transform: translate(5px, -5px);
+}
+
+.superman {
+	position: absolute;
+	top: 55%;
+	animation: supermanAnimation 5s infinite linear;
+}
+.superman img {
+	width: 150px;
+	transform: rotate(20deg);
+}
+
+.star {
+	width: 3px;
+	height: 3px;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	box-shadow: 0 0 5px #fff;
+	animation: starAnimation 2s infinite linear;
+}
+
+@keyframes supermanAnimation {
+	0% {
+		left: -150px;
+	}
+	100% {
+		left: 110%;
+	}
+}
+
+@keyframes starAnimation {
+	0% {
+		box-shadow: 0 0 5px #fff;
+	}
+
+	20% {
+		box-shadow: 0 0 35px #fff;
+	}
+
+	40% {
+		box-shadow: 0 0 5px #fff;
+	}
+
+	60% {
+		box-shadow: 0 0 35px #fff;
+	}
+
+	80% {
+		box-shadow: 0 0 5px #fff;
+	}
+
+	100% {
+		box-shadow: 0 0 35px #fff;
+	}
+}
