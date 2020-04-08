@@ -32,11 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		}, 10);
 
 		const runStar = () => {
-			right += 5;
+			right += 3;
 			star.style.right = right + "px";
 		};
-		setTimeout(() => {
-			star.remove();
-		}, 6000);
 	};
 });

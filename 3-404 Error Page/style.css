@@ -28,6 +28,7 @@ a {
 .title {
 	font-size: 120px;
 	margin-top: 50px;
+	text-align: center;
 }
 
 .content {
@@ -74,9 +75,23 @@ a {
 @keyframes supermanAnimation {
 	0% {
 		left: -150px;
+		top: 55%;
+	}
+	20% {
+		top: 62%;
+	}
+	40% {
+		top: 55%;
+	}
+	60% {
+		top: 62%;
+	}
+	80% {
+		top: 55%;
 	}
 	100% {
 		left: 110%;
+		top: 62%;
 	}
 }
 
