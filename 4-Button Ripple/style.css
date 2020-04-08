@@ -1,0 +1,53 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	background-image: linear-gradient(
+		to right top,
+		#5b4b49,
+		#7b5c5c,
+		#9b6e74,
+		#bc8090,
+		#db93b0
+	);
+}
+.button-demo {
+	position: relative;
+	width: 20rem;
+	height: 5rem;
+	outline: none;
+	border: 0 solid #23967f;
+	border-radius: 0.75rem;
+	font-size: 2rem;
+	color: #fff;
+	background-color: #23967f;
+	box-shadow: 2px 5px 5px #000;
+	cursor: pointer;
+	transition: 0.2s all;
+	overflow: hidden;
+}
+
+.button-demo:active {
+	transform: translate(2px, 5px);
+	box-shadow: none;
+}
+
+.ripple {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.4);
+	transform: translate(-50%, -50%);
+	animation: rippleAnimation 0.5s ease-in-out;
+}
+
+@keyframes rippleAnimation {
+	100% {
+		width: 32rem;
+		height: 32rem;
+		opacity: 0;
+	}
+}
