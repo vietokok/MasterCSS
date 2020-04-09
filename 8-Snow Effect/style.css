@@ -1,0 +1,9 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow: hidden;
+	background: #071428 url("./images/m1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
