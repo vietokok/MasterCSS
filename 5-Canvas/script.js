@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const R = 5;
 	const maxRadius = 50;
 	const velocitys = [-5, -4, -3, -2, -1, 1, 2, 3, 4, 5];
-	const numberCircle = 350;
+	const numberCircle = 400;
 	const arrayColor = ["#FFC857", "#E9724C", "#C5283D", "#481D24", "#255F85"];
 	let arrayCircle;
 	let mouse = {
