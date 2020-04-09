@@ -1,0 +1,19 @@
+{
+  "name": "practicecss",
+  "version": "1.0.0",
+  "description": "* Apple Button\r * List Items\r * 404 Error Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vietokok/MasterCSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vietokok/MasterCSS/issues"
+  },
+  "homepage": "https://github.com/vietokok/MasterCSS#readme"
+}
