@@ -4,3 +4,7 @@
 * 404 Error Page
 * Button Ripple
 * Canvas
+* Progressbar
+* Preload Page
+* Snow Effect
+* Firework Effect
