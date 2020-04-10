@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<p>Happy New Year 2019!</p>
+		<div class="option">
+			<button id="Reset-Config">Reset config</button>
+			<div>
+				<input type="range" id="Size" value="3" step="0.1" min="1" max="8" />
+				<label for="">Size</label>
+			</div>
+			<div>
+				<input
+					type="range"
+					id="Number"
+					value="20"
+					step="0.1"
+					min="10"
+					max="40"
+				/>
+				<label for="">Quantity</label>
+			</div>
+			<div>
+				<input type="range" id="Fill" value="1" min="1" max="5" />
+				<label for="">Fill</label>
+			</div>
+		</div>
+		<audio
+			style="display: none; opacity: 0; background-color: #111;"
+			preload="auto"
+			autoplay
+			id="audio"
+			controls
+			source
+			src="./musics/music.mp3"
+		></audio>
+		<script src="./script.js"></script>
+	</body>
+</html>

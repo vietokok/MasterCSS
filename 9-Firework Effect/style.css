@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil");
+* {
+	font-family: "Allerta Stencil", sans-serif;
+}
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 100vh;
+	background-image: linear-gradient(
+		to left bottom,
+		#0c1625,
+		#001534,
+		#001341,
+		#000d4d,
+		#0f0055
+	);
+}
+p {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.15);
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 4rem;
+}
+
+.option {
+	position: fixed;
+	left: 2.5rem;
+	bottom: 2.5rem;
+}
+
+button {
+	background: #ff0000;
+	border: 0px;
+	border-radius: 4px;
+	color: #fff;
+	padding: 0.25rem 1rem;
+	margin-bottom: 0.25rem;
+	cursor: pointer;
+	transition: 0.3s all;
+	outline: none;
+	box-shadow: 0px 0px 5px #ff0000;
+}
+button:hover {
+	background: #ff3030;
+}
+button:active {
+	transform: translate(-2px, 2px);
+}
+
+label {
+	font-size: 1rem;
+	color: #fff;
+}
+input[type="range"] {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 5px;
+	margin-top: 1rem;
+	background-image: linear-gradient(
+		45deg,
+		#db0094,
+		#0000ff,
+		#ffff00,
+		#ff0000,
+		#db0094,
+		#0000ff,
+		#ffff00,
+		#ff0000
+	);
+	outline: none;
+	cursor: pointer;
+	width: 12.5rem;
+	border-radius: 0.75rem;
+	border: 1px solid #fff;
+	background-size: 400%;
+	animation: animationBackground 20s infinite;
+}
+
+@keyframes animationBackground {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
